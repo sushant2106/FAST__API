@@ -12,5 +12,3 @@ class Item(Base):
 
     def __repr__(self):
         return f"<Item name={self.name} price={self.price}>"
-    
-    

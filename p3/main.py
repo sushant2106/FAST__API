@@ -68,6 +68,8 @@ def create_an_item(item:Item):
     
     if db_item is not None:
         raise HTTPException(status_code=400,detail='Item is already exists')
+    
+
 
     db.add(new_item)
     db.commit()
